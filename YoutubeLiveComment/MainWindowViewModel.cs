@@ -44,7 +44,10 @@ namespace YoutubeLiveComment
 
         private async void MyTimerMethod(object sender, EventArgs e)
         {
+            timer.Stop();
             await Task.Run(() => service.GetLiveCommentMessage());
+            timer.Interval = new TimeSpan(0, 0, 0, 0, service.Interval);
+            timer.Start();
         }
 
         private void SetupTimer()
