@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="Comment" Height="140" Width="600"
         Topmost="True" 
-        WindowStyle="None" AllowsTransparency="True" Background="#30000080"
-        FontSize="24" Foreground="WhiteSmoke">
+        WindowStyle="None" AllowsTransparency="True" >
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>

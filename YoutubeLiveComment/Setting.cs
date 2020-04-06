@@ -1,22 +1,61 @@
 ﻿using System.Configuration;
+using System.Windows.Media;
 
 namespace YoutubeLiveComment
 {
     public static class Setting
     {
-        private static string font = string.Empty;
+        private static string fontFamily = string.Empty;
+        private static Brush fontColor = null;
+        private static int fontSize = 0;
+        private static Brush background = null;
         private static string apiKey = string.Empty;
         private static string videoId = string.Empty;
         private static int commentNum = 0;
-        public static string Font
+        public static string FontFamily
         {
             get
             {
-                if (font == string.Empty)
+                if (fontFamily == string.Empty)
                 {
-                    font = ConfigurationManager.AppSettings["Font"];
+                    fontFamily = ConfigurationManager.AppSettings["FontFamily"];
                 }
-                return font;
+                return fontFamily;
+            }
+        }
+        public static Brush FontColor
+        {
+            get
+            {
+                if (fontColor == null)
+                {
+                    var converter = new BrushConverter();
+                    fontColor = (Brush)converter.ConvertFromString(ConfigurationManager.AppSettings["FontColor"]);
+                }
+                return fontColor;
+            }
+        }
+        public static int FontSize
+        {
+            get
+            {
+                if (fontSize == 0)
+                {
+                    fontSize = int.Parse(ConfigurationManager.AppSettings["FontSize"]);
+                }
+                return fontSize;
+            }
+        }
+        public static Brush Background
+        {
+            get
+            {
+                if (background == null)
+                {
+                    var converter = new BrushConverter();
+                    background = (Brush)converter.ConvertFromString(ConfigurationManager.AppSettings["Background"]);
+                }
+                return background;
             }
         }
         public static string ApiKey
