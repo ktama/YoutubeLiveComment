@@ -24,10 +24,6 @@ https://www.youtube.com/watch?v=[ビデオID]
 気が向いたら下記のことは対応するかもしれません。
 * 取得間隔の改善
   * 今固定値になっていて、本当はAPIの戻り値のインターバルを使わないといけない
-* 設定
-  * フォント（色、サイズ）
-  * 背景色
-  * ウィンドウサイズ
 * ビルド済みモジュールのGitHubへの配置
 
 # 利用したAPI
@@ -38,4 +34,6 @@ https://www.youtube.com/watch?v=[ビデオID]
 
 # 参考
 [Youtube Data APIを使用して、Youtube Liveのコメントを取得する || Qiita](https://qiita.com/MCK9595/items/fdbd543ff938febcd136)
+
+[WPF - 枠無しウィンドウをリサイズおよび移動可能にしてみる || getBiboroku().get(Biboroku.Type.ALL)](http://getbget.seesaa.net/article/436398354.html)
 

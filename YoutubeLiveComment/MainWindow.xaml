@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YoutubeLiveComment"
         mc:Ignorable="d"
-        Title="Comment" Height="140" Width="600"
-        Topmost="True" 
-        WindowStyle="None" AllowsTransparency="True" >
+        Title="Comment" Topmost="True" 
+        WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
