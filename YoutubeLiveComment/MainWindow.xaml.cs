@@ -16,6 +16,8 @@ namespace YoutubeLiveComment
             FontSize = Setting.FontSize;
             Foreground = Setting.FontColor;
             Background = Setting.Background;
+            Width = Setting.WindowWidth;
+            Height = Setting.WindowHeight;
         }
     }
 }

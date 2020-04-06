@@ -9,6 +9,8 @@ namespace YoutubeLiveComment
         private static Brush fontColor = null;
         private static int fontSize = 0;
         private static Brush background = null;
+        private static double windowWidth = 0;
+        private static double windowHeight = 0;
         private static string apiKey = string.Empty;
         private static string videoId = string.Empty;
         private static int commentNum = 0;
@@ -56,6 +58,28 @@ namespace YoutubeLiveComment
                     background = (Brush)converter.ConvertFromString(ConfigurationManager.AppSettings["Background"]);
                 }
                 return background;
+            }
+        }
+        public static double WindowWidth
+        {
+            get
+            {
+                if (windowWidth == 0)
+                {
+                    windowWidth = double.Parse(ConfigurationManager.AppSettings["WindowWidth"]);
+                }
+                return windowWidth;
+            }
+        }
+        public static double WindowHeight
+        {
+            get
+            {
+                if (windowHeight == 0)
+                {
+                    windowHeight = double.Parse(ConfigurationManager.AppSettings["WindowHeight"]);
+                }
+                return windowHeight;
             }
         }
         public static string ApiKey
