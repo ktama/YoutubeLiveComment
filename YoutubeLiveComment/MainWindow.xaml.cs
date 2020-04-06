@@ -11,6 +11,11 @@ namespace YoutubeLiveComment
         {
             InitializeComponent();
             MouseLeftButtonDown += (sender, e) => { DragMove(); };
+
+            // フォントの設定
+            FontSize = Setting.FontSize;
+            Foreground = Setting.FontColor;
+            Background = Setting.Background;
         }
     }
 }

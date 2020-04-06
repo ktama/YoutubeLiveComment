@@ -33,5 +33,9 @@ https://www.youtube.com/watch?v=[ビデオID]
 # 利用したAPI
 [Google Cloud Platform](https://console.developers.google.com/?hl=ja)
 
+# デフォルトに設定してるフォント
+[プログラミングフォント 白源 (はくげん／HackGen)](https://github.com/yuru7/HackGen)
+
 # 参考
 [Youtube Data APIを使用して、Youtube Liveのコメントを取得する || Qiita](https://qiita.com/MCK9595/items/fdbd543ff938febcd136)
+

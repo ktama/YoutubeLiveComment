@@ -9,7 +9,7 @@ namespace YoutubeLiveComment
     {
         public App()
         {
-            var font = new System.Windows.Media.FontFamily(Setting.Font);
+            var font = new System.Windows.Media.FontFamily(Setting.FontFamily);
             var style = new Style(typeof(Window));
             style.Setters.Add((new Setter(Window.FontFamilyProperty, font)));
 
